@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.5](https://github.com/open-feature/go-sdk-contrib/compare/hooks/open-telemetry/v0.3.4...hooks/open-telemetry/v0.3.5) (2024-08-20)
+
+
+### 🧹 Chore
+
+* add license to module ([#554](https://github.com/open-feature/go-sdk-contrib/issues/554)) ([abb7657](https://github.com/open-feature/go-sdk-contrib/commit/abb76571c373582f36837587400104eb754c01b9))
+
 ## [0.3.4](https://github.com/open-feature/go-sdk-contrib/compare/hooks/open-telemetry/v0.3.3...hooks/open-telemetry/v0.3.4) (2024-08-14)
 
 
