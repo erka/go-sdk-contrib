@@ -5,14 +5,17 @@ import (
 	"fmt"
 	"math"
 	"regexp"
+	"slices"
 	"strconv"
 	"strings"
 	"time"
+
+	of "github.com/open-feature/go-sdk/openfeature"
 )
 
 const maxRegexInputLength = 10_000
 
-func evaluateDatafile(data *Datafile, flagKey string, defaultValue any, entities map[string]any) evaluationResult {
+func evaluateDatafile(data *Datafile, flagKey string, defaultValue any, flatCtx of.FlattenedContext) evaluationResult {
 	if data == nil {
 		return evaluationResult{
 			Value:        defaultValue,
@@ -30,14 +33,13 @@ func evaluateDatafile(data *Datafile, flagKey string, defaultValue any, entities
 			ErrorMessage: fmt.Sprintf(`@vercel/flags-core: Definition not found for flag "%s"`, flagKey),
 		}
 	}
-
 	result, err := evaluateDefinition(evaluationParams{
 		defaultValue: defaultValue,
 		definition:   definition,
 		environment:  data.Environment,
-		entities:     entities,
+		entities:     flatCtx,
 		segments:     data.Segments,
-	}, map[string]bool{})
+	}, map[string]struct{}{})
 	if err != nil {
 		return evaluationResult{
 			Value:        defaultValue,
@@ -57,7 +59,7 @@ type evaluationParams struct {
 	segments     map[string]Segment
 }
 
-func evaluateDefinition(params evaluationParams, visited map[string]bool) (evaluationResult, error) {
+func evaluateDefinition(params evaluationParams, visited map[string]struct{}) (evaluationResult, error) {
 	envConfig, ok := params.definition.Environments[params.environment]
 	if !ok {
 		return evaluationResult{
@@ -89,14 +91,14 @@ func evaluateDefinition(params evaluationParams, visited map[string]bool) (evalu
 	}
 
 	if reuse, ok := env["reuse"].(string); ok {
-		if visited[reuse] {
+		if _, ok := visited[reuse]; ok {
 			return evaluationResult{
 				Value:        params.defaultValue,
 				Reason:       reasonError,
 				ErrorMessage: fmt.Sprintf(`Circular environment reuse detected: "%s"`, reuse),
 			}, nil
 		}
-		visited[params.environment] = true
+		visited[params.environment] = struct{}{}
 		params.environment = reuse
 		return evaluateDefinition(params, visited)
 	}
@@ -331,10 +333,8 @@ func matchTargetList(targets any, params evaluationParams) bool {
 			if !ok {
 				continue
 			}
-			for _, value := range values {
-				if value == entityString {
-					return true
-				}
+			if slices.Contains(values, entityString) {
+				return true
 			}
 		}
 	}

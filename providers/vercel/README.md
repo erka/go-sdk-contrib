@@ -17,11 +17,12 @@ import (
 	"context"
 	"log"
 
-	vercel "github.com/open-feature/go-sdk-contrib/providers/vercel/pkg"
+	"github.com/open-feature/go-sdk-contrib/providers/vercel"
 	"github.com/open-feature/go-sdk/openfeature"
 )
 
 func main() {
+  ctx := context.Background()
 	provider, err := vercel.NewProvider()
 	if err != nil {
 		log.Fatal(err)
@@ -37,10 +38,7 @@ func main() {
 		"user": map[string]any{"id": "user-123"},
 	})
 
-	enabled, err := client.BooleanValue(context.Background(), "new-checkout", false, evalCtx)
-	if err != nil {
-		log.Fatal(err)
-	}
+	enabled := client.Boolean(ctx, "new-checkout", false, evalCtx)
 
 	log.Println(enabled)
 }

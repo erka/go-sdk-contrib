@@ -1,6 +1,7 @@
 package vercel
 
 import (
+	"cmp"
 	"net/http"
 	"os"
 	"strings"
@@ -54,7 +55,7 @@ func WithConnectionString(connectionString string) Option {
 // for tests.
 func WithHost(host string) Option {
 	return func(o *providerOptions) {
-		o.host = strings.TrimRight(host, "/")
+		o.host = cmp.Or(strings.TrimRight(host, "/"), defaultHost)
 	}
 }
 
