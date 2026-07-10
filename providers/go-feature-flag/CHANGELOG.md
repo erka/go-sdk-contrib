@@ -1,5 +1,57 @@
 # Changelog
 
+## [2.0.0](https://github.com/erka/go-sdk-contrib/compare/providers/go-feature-flag/v1.1.1...providers/go-feature-flag/v2.0.0) (2026-07-10)
+
+
+### ⚠ BREAKING CHANGES
+
+* **go-feature-flag:** add in-process flag evaluation support + tracking ([#851](https://github.com/erka/go-sdk-contrib/issues/851))
+* **go-feature-flag:** GO Feature Flag provider rebuild  ([#547](https://github.com/erka/go-sdk-contrib/issues/547))
+
+### 🐛 Bug Fixes
+
+* Calling `err.Error()` on nil error causes panic ([#579](https://github.com/erka/go-sdk-contrib/issues/579)) ([4c85501](https://github.com/erka/go-sdk-contrib/commit/4c855019d912982cd30f2c940e0908892c68410b))
+* **deps:** update module github.com/open-feature/go-sdk to v1.10.0 ([#469](https://github.com/erka/go-sdk-contrib/issues/469)) ([21810af](https://github.com/erka/go-sdk-contrib/commit/21810afc33fce9a3940ec9dc59e65f140fcbaa57))
+* **deps:** update module github.com/open-feature/go-sdk to v1.11.0 ([#501](https://github.com/erka/go-sdk-contrib/issues/501)) ([3f0eaa5](https://github.com/erka/go-sdk-contrib/commit/3f0eaa575500baa663dc24dbfc6cf8214565471f))
+* **deps:** update module github.com/open-feature/go-sdk to v1.15.1 ([#681](https://github.com/erka/go-sdk-contrib/issues/681)) ([8fd544f](https://github.com/erka/go-sdk-contrib/commit/8fd544ff81fd25eed655a214aa1ae1906a436f0d))
+* **deps:** update module github.com/open-feature/go-sdk to v1.5.1 ([#263](https://github.com/erka/go-sdk-contrib/issues/263)) ([c75ffd6](https://github.com/erka/go-sdk-contrib/commit/c75ffd6017689a86860dec92c1a1564b6145f0c9))
+* **deps:** update module github.com/open-feature/go-sdk to v1.6.0 ([#289](https://github.com/erka/go-sdk-contrib/issues/289)) ([13eeb48](https://github.com/erka/go-sdk-contrib/commit/13eeb482ee3d69c5fb8100563501c2250b6454f1))
+* **deps:** update module github.com/open-feature/go-sdk to v1.7.0 ([#315](https://github.com/erka/go-sdk-contrib/issues/315)) ([3f049ad](https://github.com/erka/go-sdk-contrib/commit/3f049ad34e93c3b9b9d4cf5a2e56f3777eb858e6))
+* **deps:** update module github.com/open-feature/go-sdk to v1.8.0 ([#329](https://github.com/erka/go-sdk-contrib/issues/329)) ([c99b527](https://github.com/erka/go-sdk-contrib/commit/c99b52728bad9dce52bfb78a08ae5f4eea83a397))
+* **deps:** update module github.com/open-feature/go-sdk-contrib/providers/ofrep to v0.1.6 ([#708](https://github.com/erka/go-sdk-contrib/issues/708)) ([77e2c32](https://github.com/erka/go-sdk-contrib/commit/77e2c32d694459fd2e5dcfd2f9ad0b427365ac23))
+* **deps:** update module github.com/stretchr/testify to v1.10.0 ([#718](https://github.com/erka/go-sdk-contrib/issues/718)) ([d7963ff](https://github.com/erka/go-sdk-contrib/commit/d7963ff4f0a9bd25968efca31b92fdfd886a9e92))
+* **deps:** update module github.com/stretchr/testify to v1.9.0 ([#470](https://github.com/erka/go-sdk-contrib/issues/470)) ([5263567](https://github.com/erka/go-sdk-contrib/commit/52635679b633e01e23196885a4a98d3cecbc8822))
+* **deps:** update module github.com/thomaspoignant/go-feature-flag to v1.12.0 ([#252](https://github.com/erka/go-sdk-contrib/issues/252)) ([ae90007](https://github.com/erka/go-sdk-contrib/commit/ae90007b6ea7e6b820fcc49c47cafe8945984412))
+* **deps:** update module github.com/thomaspoignant/go-feature-flag to v1.12.1 ([#269](https://github.com/erka/go-sdk-contrib/issues/269)) ([c33e306](https://github.com/erka/go-sdk-contrib/commit/c33e30613d20179e96e1b0b63229ea5419fbd1dd))
+* **deps:** update module github.com/thomaspoignant/go-feature-flag to v1.13.0 ([#290](https://github.com/erka/go-sdk-contrib/issues/290)) ([71efa79](https://github.com/erka/go-sdk-contrib/commit/71efa79ed71a4f0db605f352e21b8818abd146f2))
+* **deps:** update module github.com/thomaspoignant/go-feature-flag to v1.14.0 ([#305](https://github.com/erka/go-sdk-contrib/issues/305)) ([551e8c0](https://github.com/erka/go-sdk-contrib/commit/551e8c03b757a584c106a6e999b09b09ce4ba33e))
+* **deps:** update module github.com/thomaspoignant/go-feature-flag to v1.14.1 ([#309](https://github.com/erka/go-sdk-contrib/issues/309)) ([1ae0ffa](https://github.com/erka/go-sdk-contrib/commit/1ae0ffa31cce316742474bd089c11237f414f2eb))
+* **deps:** update module github.com/thomaspoignant/go-feature-flag to v1.15.0 ([#316](https://github.com/erka/go-sdk-contrib/issues/316)) ([58713dd](https://github.com/erka/go-sdk-contrib/commit/58713dd2ae9ccecc4959c108850250aeebce8f31))
+* **deps:** update module github.com/thomaspoignant/go-feature-flag to v1.15.1 ([#319](https://github.com/erka/go-sdk-contrib/issues/319)) ([818fae8](https://github.com/erka/go-sdk-contrib/commit/818fae824430d91d25a33f111ee086f3b34aea1a))
+* **deps:** update module github.com/thomaspoignant/go-feature-flag to v1.15.2 ([#343](https://github.com/erka/go-sdk-contrib/issues/343)) ([847330f](https://github.com/erka/go-sdk-contrib/commit/847330f3b871c4f4f669dcceb586d4db7b3b25b1))
+* **deps:** update module github.com/thomaspoignant/go-feature-flag to v1.18.1 ([#367](https://github.com/erka/go-sdk-contrib/issues/367)) ([74d5be6](https://github.com/erka/go-sdk-contrib/commit/74d5be67d42c87fd86e4ed83a3ab6698cb61db15))
+* **deps:** update module github.com/thomaspoignant/go-feature-flag to v1.18.2 ([#386](https://github.com/erka/go-sdk-contrib/issues/386)) ([b819ad9](https://github.com/erka/go-sdk-contrib/commit/b819ad9229122182d5012920464692f7d793c1a5))
+* **deps:** update module github.com/thomaspoignant/go-feature-flag to v1.21.0 ([#424](https://github.com/erka/go-sdk-contrib/issues/424)) ([37d1958](https://github.com/erka/go-sdk-contrib/commit/37d19581843b09d1905efcf612bf2c3707a574f4))
+* **deps:** update module github.com/thomaspoignant/go-feature-flag to v1.24.0 ([#472](https://github.com/erka/go-sdk-contrib/issues/472)) ([dfd254e](https://github.com/erka/go-sdk-contrib/commit/dfd254eeeadd7333d24a87b90407766613bebd68))
+* **deps:** update module github.com/thomaspoignant/go-feature-flag to v1.24.2 ([#485](https://github.com/erka/go-sdk-contrib/issues/485)) ([eb092d4](https://github.com/erka/go-sdk-contrib/commit/eb092d4637b8ee2160b36928ea0e50425dad2752))
+* **deps:** update module github.com/thomaspoignant/go-feature-flag to v1.25.0 ([#502](https://github.com/erka/go-sdk-contrib/issues/502)) ([9e6366c](https://github.com/erka/go-sdk-contrib/commit/9e6366c3e76618b2f4cbd16cc2ac8a2e9596c1ba))
+* go-feature-flag sdk - cache key ([#282](https://github.com/erka/go-sdk-contrib/issues/282)) ([4b28f1c](https://github.com/erka/go-sdk-contrib/commit/4b28f1cfd6bd50896161bba5b16162ec61821907))
+* **go-feature-flag:** Bump OFREP to fix the issue with `withHeader`. ([#862](https://github.com/erka/go-sdk-contrib/issues/862)) ([e9404be](https://github.com/erka/go-sdk-contrib/commit/e9404be014f3f6ae7fadc678cbd17c156d9328d0))
+* **go-feature-flag:** Remove unused variables ([#747](https://github.com/erka/go-sdk-contrib/issues/747)) ([0d3648c](https://github.com/erka/go-sdk-contrib/commit/0d3648c93504d0a57aef94d146c7211890dadd28))
+* **go-feature-flag:** Typo in the readme file ([#911](https://github.com/erka/go-sdk-contrib/issues/911)) ([03ad519](https://github.com/erka/go-sdk-contrib/commit/03ad519b6e8bfc906ad18cb2046b345710a9af4c))
+* lint correction on tests ([#276](https://github.com/erka/go-sdk-contrib/issues/276)) ([b972274](https://github.com/erka/go-sdk-contrib/commit/b972274655638dd09c90b5974a9f8aca0b04ca13))
+
+
+### ✨ New Features
+
+* **fo-feature-flag:** add DisableCacheMetrics to disable metrics collector ([#542](https://github.com/erka/go-sdk-contrib/issues/542)) ([163aacf](https://github.com/erka/go-sdk-contrib/commit/163aacffc14c79f640e6191546c0781e9314022e))
+* **go-feature-flag:** add caching support for remote evaluation ([#868](https://github.com/erka/go-sdk-contrib/issues/868)) ([14e6034](https://github.com/erka/go-sdk-contrib/commit/14e6034c699c023d500821ce0475d6128caaa421))
+* **go-feature-flag:** add in-process flag evaluation support + tracking ([#851](https://github.com/erka/go-sdk-contrib/issues/851)) ([0b44677](https://github.com/erka/go-sdk-contrib/commit/0b44677ab580af9bf740da494ebb037e6beb7ecf))
+* **go-feature-flag:** GO Feature Flag provider rebuild  ([#547](https://github.com/erka/go-sdk-contrib/issues/547)) ([6d77738](https://github.com/erka/go-sdk-contrib/commit/6d777384214f981d6e247ad6b0a13b26aaec591a))
+* **gofeatureflag:** Support exporterMetadata in evaluation API ([#621](https://github.com/erka/go-sdk-contrib/issues/621)) ([ec4421e](https://github.com/erka/go-sdk-contrib/commit/ec4421ed6f54f9c06953664411863e24ea75b7fa))
+* Return CACHED reason when using cache ([#250](https://github.com/erka/go-sdk-contrib/issues/250)) ([1043924](https://github.com/erka/go-sdk-contrib/commit/1043924810e38ac1beaac18b1aef32efdfe60e2a))
+* Support Exporter Metadata ([#614](https://github.com/erka/go-sdk-contrib/issues/614)) ([f2b732f](https://github.com/erka/go-sdk-contrib/commit/f2b732fb06eaa76c3ba65f8129ad450b5003e4c7))
+
 ## [1.1.1](https://github.com/open-feature/go-sdk-contrib/compare/providers/go-feature-flag/v1.1.0...providers/go-feature-flag/v1.1.1) (2026-07-02)
 
 
