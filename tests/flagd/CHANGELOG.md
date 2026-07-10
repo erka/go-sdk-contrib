@@ -1,5 +1,41 @@
 # Changelog
 
+## [3.0.0](https://github.com/erka/go-sdk-contrib/compare/tests/flagd/v2.0.2...tests/flagd/v3.0.0) (2026-07-10)
+
+
+### ⚠ BREAKING CHANGES
+
+* DISABLED is a successful evaluation (still defaults) ([#896](https://github.com/erka/go-sdk-contrib/issues/896))
+* add graceful defaulting to code defaults ([#841](https://github.com/erka/go-sdk-contrib/issues/841))
+
+### 🐛 Bug Fixes
+
+* add missing configuration for tests ([#738](https://github.com/erka/go-sdk-contrib/issues/738)) ([8f21b1f](https://github.com/erka/go-sdk-contrib/commit/8f21b1fc1452649149a493caeb100f01bdca7cd9))
+* core lib update for various custom operator conformance fixes ([#874](https://github.com/erka/go-sdk-contrib/issues/874)) ([df6230b](https://github.com/erka/go-sdk-contrib/commit/df6230b72b4a99a03929189cdab4c61641fc9e78))
+* **deps:** bump open-feature/go-sdk from v1.11 to v1.15 ([#686](https://github.com/erka/go-sdk-contrib/issues/686)) ([ce87102](https://github.com/erka/go-sdk-contrib/commit/ce871021d0c45d3c992bb00b33c8b7a8e337e9a3))
+* error handing, add e2e tests ([#334](https://github.com/erka/go-sdk-contrib/issues/334)) ([dfc3b5a](https://github.com/erka/go-sdk-contrib/commit/dfc3b5a73e6708aa852a2f2651468de96a754694))
+* fix flagd dependencies ([#380](https://github.com/erka/go-sdk-contrib/issues/380)) ([b7baa69](https://github.com/erka/go-sdk-contrib/commit/b7baa6990e05f46637917d83b07dbe0f741d0036))
+* **flagd:** configurable retry backoff after each sync cycle error ([#756](https://github.com/erka/go-sdk-contrib/issues/756)) ([#806](https://github.com/erka/go-sdk-contrib/issues/806)) ([0791fa1](https://github.com/erka/go-sdk-contrib/commit/0791fa182c376bfc7c5109403e5f99799a64c87e))
+* **flagd:** do not retry for certain status codes ([#756](https://github.com/erka/go-sdk-contrib/issues/756)) ([#799](https://github.com/erka/go-sdk-contrib/issues/799)) ([e01a99e](https://github.com/erka/go-sdk-contrib/commit/e01a99ed8a0b54a2c09ed9c2aa4f5cd658769e78))
+* implement deadline to fix indefinite init ([#823](https://github.com/erka/go-sdk-contrib/issues/823)) ([24c1bba](https://github.com/erka/go-sdk-contrib/commit/24c1bbad9476b4be632e5dae263b40abc9a1b80d))
+* lint correction on tests ([#276](https://github.com/erka/go-sdk-contrib/issues/276)) ([b972274](https://github.com/erka/go-sdk-contrib/commit/b972274655638dd09c90b5974a9f8aca0b04ca13))
+* remove custom tag (leftover) ([#740](https://github.com/erka/go-sdk-contrib/issues/740)) ([49ba246](https://github.com/erka/go-sdk-contrib/commit/49ba246cac6a13ff76a7cda4a6346982064c380e))
+* **security:** update module github.com/docker/compose/v2 to v2.40.2 [security] ([#785](https://github.com/erka/go-sdk-contrib/issues/785)) ([805823f](https://github.com/erka/go-sdk-contrib/commit/805823f5ded2d81359fd7663804beb50f30d52f7))
+* suppress noisy test log output ([559ab31](https://github.com/erka/go-sdk-contrib/commit/559ab31d8c7092674a17a28dc8b7b5552ac71b6a))
+* update test module for v2 ([4673c19](https://github.com/erka/go-sdk-contrib/commit/4673c19f2d331a9ec38a0a6fcd392ddde768a9fd))
+
+
+### ✨ New Features
+
+* add graceful defaulting to code defaults ([#841](https://github.com/erka/go-sdk-contrib/issues/841)) ([b4269b7](https://github.com/erka/go-sdk-contrib/commit/b4269b7cfabab90ec6223df34561ff1473208166))
+* comprehensive flagd e2e testing framework with testcontainers integration ([#732](https://github.com/erka/go-sdk-contrib/issues/732)) ([e3ec17b](https://github.com/erka/go-sdk-contrib/commit/e3ec17bdc7140582582a5df1154b6044cbf5b640))
+* DISABLED is a successful evaluation (still defaults) ([#896](https://github.com/erka/go-sdk-contrib/issues/896)) ([f1d251a](https://github.com/erka/go-sdk-contrib/commit/f1d251ae6618cbb35e9033639781cc9ac99aaa73))
+* domain specific provider for e2e tests ([#443](https://github.com/erka/go-sdk-contrib/issues/443)) ([b77d0f5](https://github.com/erka/go-sdk-contrib/commit/b77d0f533cbb93a4f4056c392cd8f4a6b47501c0))
+* Eventing support for flagd provider ([#317](https://github.com/erka/go-sdk-contrib/issues/317)) ([6b373cb](https://github.com/erka/go-sdk-contrib/commit/6b373cb393729c6f1f2a31b334cf06fac65dd369))
+* flagd json eval suite ([#328](https://github.com/erka/go-sdk-contrib/issues/328)) ([d36f0c5](https://github.com/erka/go-sdk-contrib/commit/d36f0c50a003a7583bcfdd078219cd46fe7bd77d))
+* **flagd:** add eventing with graceperiod for inprocess resolver ([#744](https://github.com/erka/go-sdk-contrib/issues/744)) ([a9fabb6](https://github.com/erka/go-sdk-contrib/commit/a9fabb623d22b6a1ef888722ffe68686031309b8))
+* **go-feature-flag-inprocess:** update go-feature-flag dep to v1.49.0 ([#821](https://github.com/erka/go-sdk-contrib/issues/821)) ([6fa5a89](https://github.com/erka/go-sdk-contrib/commit/6fa5a8914f838db8507eea4d19d6a07521184afc))
+
 ## [2.0.2](https://github.com/open-feature/go-sdk-contrib/compare/tests/flagd/v2.0.1...tests/flagd/v2.0.2) (2026-03-19)
 
 
