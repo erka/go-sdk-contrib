@@ -11,7 +11,7 @@
     "providers/launchdarkly": "0.1.6",
     "providers/unleash": "0.1.1-alpha",
     "providers/harness": "0.0.5-alpha",
-    "providers/statsig": "0.0.4",
+    "providers/statsig": "0.0.5",
     "providers/ofrep": "0.1.7",
     "providers/prefab": "0.0.4",
     "tests/flagd": "2.0.2",
