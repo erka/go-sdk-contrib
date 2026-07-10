@@ -4,13 +4,16 @@ FLAGD_TESTBED = flagd-testbed
 FLAGD_SYNC = sync-testbed
 GOLANGCI_LINT_VERSION := v2.8.0
 GOBIN := $(or $(shell go env GOBIN),$(shell go env GOPATH | cut -d: -f1)/bin)
+GO_VERSION ?= 1.25.8
 
 workspace-init:
 	go work init
-	$(foreach module, $(ALL_GO_MOD_DIRS), go work use $(module) &&) true
+	$(foreach module, $(ALL_GO_MOD_DIRS), go work use $(module);)
+	go work edit -go=$(GO_VERSION) -toolchain=go$(GO_VERSION)
 
 workspace-update:
-	$(foreach module, $(ALL_GO_MOD_DIRS), go work use $(module) &&) true
+	$(foreach module, $(ALL_GO_MOD_DIRS), go work use $(module);)
+	go work edit -go=$(GO_VERSION) -toolchain=go$(GO_VERSION)
 
 test:
 	go list -f '{{.Dir}}/...' -m | xargs -I{} go test -v {}

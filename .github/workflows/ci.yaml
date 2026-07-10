@@ -33,7 +33,7 @@ jobs:
       - name: Module cache
         uses: actions/cache@27d5ce7f107fe9357f9df03efb73ab90386fccae # v5
         env:
-          cache-name: go-mod-cache
+          cache-name: go-mod--cache
         with:
           path: ~/go/pkg/mod
           key: ${{ runner.os }}-${{ env.cache-name }}-${{ hashFiles('**/go.sum') }}
@@ -64,7 +64,7 @@ jobs:
       - name: Module cache
         uses: actions/cache@27d5ce7f107fe9357f9df03efb73ab90386fccae # v5
         env:
-          cache-name: go-mod-cache
+          cache-name: go-mod--cache
         with:
           path: ~/go/pkg/mod
           key: ${{ runner.os }}-${{ env.cache-name }}-${{ hashFiles('**/go.sum') }}
