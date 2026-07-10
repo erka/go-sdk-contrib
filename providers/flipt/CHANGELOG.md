@@ -1,5 +1,35 @@
 # Changelog
 
+## [0.1.6](https://github.com/erka/go-sdk-contrib/compare/providers/flipt/v0.1.5...providers/flipt/v0.1.6) (2026-07-10)
+
+
+### 🐛 Bug Fixes
+
+* **deps:** update module github.com/open-feature/flagd/core to v0.8.1 ([#483](https://github.com/erka/go-sdk-contrib/issues/483)) ([4c3f005](https://github.com/erka/go-sdk-contrib/commit/4c3f005f587902b239ea904c8d050d054dc8afe7))
+* **deps:** update module github.com/open-feature/go-sdk to v1.10.0 ([#469](https://github.com/erka/go-sdk-contrib/issues/469)) ([21810af](https://github.com/erka/go-sdk-contrib/commit/21810afc33fce9a3940ec9dc59e65f140fcbaa57))
+* **deps:** update module github.com/open-feature/go-sdk to v1.11.0 ([#501](https://github.com/erka/go-sdk-contrib/issues/501)) ([3f0eaa5](https://github.com/erka/go-sdk-contrib/commit/3f0eaa575500baa663dc24dbfc6cf8214565471f))
+* **deps:** update module github.com/open-feature/go-sdk to v1.15.1 ([#681](https://github.com/erka/go-sdk-contrib/issues/681)) ([8fd544f](https://github.com/erka/go-sdk-contrib/commit/8fd544ff81fd25eed655a214aa1ae1906a436f0d))
+* **deps:** update module github.com/stretchr/testify to v1.9.0 ([#470](https://github.com/erka/go-sdk-contrib/issues/470)) ([5263567](https://github.com/erka/go-sdk-contrib/commit/52635679b633e01e23196885a4a98d3cecbc8822))
+* **deps:** update module go.flipt.io/flipt/rpc/flipt to v1.35.0 ([#389](https://github.com/erka/go-sdk-contrib/issues/389)) ([98fa10a](https://github.com/erka/go-sdk-contrib/commit/98fa10ad9730695adaf940841e216a83f2a8a00f))
+* **deps:** update module go.flipt.io/flipt/sdk/go to v0.11.0 ([#392](https://github.com/erka/go-sdk-contrib/issues/392)) ([23ea2a3](https://github.com/erka/go-sdk-contrib/commit/23ea2a3f9de3c0b14c7c68a14f3aa91917a8f16c))
+* **deps:** update module go.opentelemetry.io/contrib/instrumentation/google.golang.org/grpc/otelgrpc to v0.46.0 [security] ([#387](https://github.com/erka/go-sdk-contrib/issues/387)) ([a1468e1](https://github.com/erka/go-sdk-contrib/commit/a1468e1fb40515048560b22ab8f343e46ee1a6ed))
+* **deps:** update module go.opentelemetry.io/contrib/instrumentation/google.golang.org/grpc/otelgrpc to v0.49.0 ([#391](https://github.com/erka/go-sdk-contrib/issues/391)) ([8ef5b1a](https://github.com/erka/go-sdk-contrib/commit/8ef5b1a21848b8f9a3bbc35a8f752b067a88b43d))
+* **deps:** update module go.opentelemetry.io/contrib/instrumentation/google.golang.org/grpc/otelgrpc to v0.53.0 ([#505](https://github.com/erka/go-sdk-contrib/issues/505)) ([2de8328](https://github.com/erka/go-sdk-contrib/commit/2de83284ee8f2b2346583b43eafb4d454d716f47))
+* **deps:** update module google.golang.org/grpc to v1.62.1 ([#430](https://github.com/erka/go-sdk-contrib/issues/430)) ([c20613c](https://github.com/erka/go-sdk-contrib/commit/c20613c5079f2a9871c451771aca2b8ab56d7bcb))
+* **deps:** update module google.golang.org/grpc to v1.64.1 [security] ([#550](https://github.com/erka/go-sdk-contrib/issues/550)) ([1c64db7](https://github.com/erka/go-sdk-contrib/commit/1c64db77dabc5d05778e82e1c5e6968b6d530d01))
+* **deps:** update module google.golang.org/protobuf to v1.36.6 ([#707](https://github.com/erka/go-sdk-contrib/issues/707)) ([509550b](https://github.com/erka/go-sdk-contrib/commit/509550ba1e6ff00dec72d49eaddbcbf6a9b4973c))
+* **flipt:** use default value from Flipt variant flag when available ([#690](https://github.com/erka/go-sdk-contrib/issues/690)) ([4ee0a36](https://github.com/erka/go-sdk-contrib/commit/4ee0a36e90d5511a704a5f44f1fe69af70724960))
+* **security:** update module github.com/containerd/containerd/v2 to v2.2.5 [security] ([#905](https://github.com/erka/go-sdk-contrib/issues/905)) ([d09a6ab](https://github.com/erka/go-sdk-contrib/commit/d09a6ab662a6910811f7ba623c0a5ae3578287d9))
+* **security:** update vulnerability-updates [security] ([#724](https://github.com/erka/go-sdk-contrib/issues/724)) ([629a535](https://github.com/erka/go-sdk-contrib/commit/629a5351c2c4b8fed00522f7453d5545920ceaaf))
+* **security:** update vulnerability-updates [security] ([#865](https://github.com/erka/go-sdk-contrib/issues/865)) ([9f0e819](https://github.com/erka/go-sdk-contrib/commit/9f0e819d2792297f70bfadabcd95ffe8ae510ab7))
+
+
+### ✨ New Features
+
+* Add Flipt Go Provider ([#376](https://github.com/erka/go-sdk-contrib/issues/376)) ([254e411](https://github.com/erka/go-sdk-contrib/commit/254e411fba55c461807ee0c11ca44fcafed17bbe))
+* **flipt:** able to provide additional gRPC Dial Options ([#593](https://github.com/erka/go-sdk-contrib/issues/593)) ([f447ea2](https://github.com/erka/go-sdk-contrib/commit/f447ea239d4bc8520805f96d1d66ab1d0ad5682b))
+* **flipt:** add WithHTTPClient option for custom HTTP client configuration ([#784](https://github.com/erka/go-sdk-contrib/issues/784)) ([0dc6b5d](https://github.com/erka/go-sdk-contrib/commit/0dc6b5d60d5b3c3727872d8078eb85030e30fc89))
+
 ## [0.1.5](https://github.com/open-feature/go-sdk-contrib/compare/providers/flipt/v0.1.4...providers/flipt/v0.1.5) (2025-11-24)
 
 
