@@ -1,5 +1,32 @@
 # Changelog
 
+## [0.2.0-alpha](https://github.com/erka/go-sdk-contrib/compare/providers/unleash/v0.1.1-alpha...providers/unleash/v0.2.0-alpha) (2026-07-10)
+
+
+### ⚠ BREAKING CHANGES
+
+* upgrade to Unlease Go Client v4 ([#620](https://github.com/erka/go-sdk-contrib/issues/620))
+
+### 🐛 Bug Fixes
+
+* **deps:** update module github.com/open-feature/go-sdk to v1.11.0 ([#501](https://github.com/erka/go-sdk-contrib/issues/501)) ([3f0eaa5](https://github.com/erka/go-sdk-contrib/commit/3f0eaa575500baa663dc24dbfc6cf8214565471f))
+* **deps:** update module github.com/open-feature/go-sdk to v1.15.1 ([#681](https://github.com/erka/go-sdk-contrib/issues/681)) ([8fd544f](https://github.com/erka/go-sdk-contrib/commit/8fd544ff81fd25eed655a214aa1ae1906a436f0d))
+* **deps:** update module github.com/open-feature/go-sdk to v1.8.0 ([#329](https://github.com/erka/go-sdk-contrib/issues/329)) ([c99b527](https://github.com/erka/go-sdk-contrib/commit/c99b52728bad9dce52bfb78a08ae5f4eea83a397))
+* **deps:** update module github.com/stretchr/testify to v1.10.0 ([#718](https://github.com/erka/go-sdk-contrib/issues/718)) ([d7963ff](https://github.com/erka/go-sdk-contrib/commit/d7963ff4f0a9bd25968efca31b92fdfd886a9e92))
+* **deps:** update module github.com/stretchr/testify to v1.9.0 ([#470](https://github.com/erka/go-sdk-contrib/issues/470)) ([5263567](https://github.com/erka/go-sdk-contrib/commit/52635679b633e01e23196885a4a98d3cecbc8822))
+* **deps:** update module github.com/unleash/unleash-client-go/v3 to v3.9.2 ([#368](https://github.com/erka/go-sdk-contrib/issues/368)) ([64ceb14](https://github.com/erka/go-sdk-contrib/commit/64ceb14a50ebe065106b83dde50269dce3ce4d25))
+* float evaluation ([#465](https://github.com/erka/go-sdk-contrib/issues/465)) ([f631417](https://github.com/erka/go-sdk-contrib/commit/f631417d3b545c075253d7b83ccd20366bcdd833))
+* IntEvaluation when cannot be parsed ([#607](https://github.com/erka/go-sdk-contrib/issues/607)) ([9343d2d](https://github.com/erka/go-sdk-contrib/commit/9343d2d60b6c70ac4d9cb9e8d0d84928bad2ad5a))
+* IntEvalution, FloatEvalution when disabled or missing flags ([#610](https://github.com/erka/go-sdk-contrib/issues/610)) ([4077d5a](https://github.com/erka/go-sdk-contrib/commit/4077d5aa048ab0978747dbf0b47a563090ba58a0))
+
+
+### ✨ New Features
+
+* Add Statsig provider ([#445](https://github.com/erka/go-sdk-contrib/issues/445)) ([409a06f](https://github.com/erka/go-sdk-contrib/commit/409a06fcf0157469495cf759692f333ae9d808f6))
+* Add Unleash Provider ([#338](https://github.com/erka/go-sdk-contrib/issues/338)) ([a9c51cf](https://github.com/erka/go-sdk-contrib/commit/a9c51cf55bb1051a81cf448ffc735dfd70700a84))
+* upgrade to Unlease Go Client v4 ([#620](https://github.com/erka/go-sdk-contrib/issues/620)) ([5f1e4f2](https://github.com/erka/go-sdk-contrib/commit/5f1e4f242de6b281a5f11bc75fd9bb8f6949cec6))
+* upgrade to unleash-client-go v3.9.0 ([#373](https://github.com/erka/go-sdk-contrib/issues/373)) ([899aae1](https://github.com/erka/go-sdk-contrib/commit/899aae1f4f13446225333579e9024cd3c1a93a42))
+
 ## [0.1.1-alpha](https://github.com/open-feature/go-sdk-contrib/compare/providers/unleash/v0.1.0-alpha...providers/unleash/v0.1.1-alpha) (2025-10-30)
 
 
