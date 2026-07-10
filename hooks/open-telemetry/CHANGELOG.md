@@ -1,5 +1,37 @@
 # Changelog
 
+## [0.4.0](https://github.com/erka/go-sdk-contrib/compare/hooks/open-telemetry/v0.3.7...hooks/open-telemetry/v0.4.0) (2026-07-10)
+
+
+### ⚠ BREAKING CHANGES
+
+* attribute setter callbacks for otel hooks and remove deprecated constructors  ([#311](https://github.com/erka/go-sdk-contrib/issues/311))
+
+### 🐛 Bug Fixes
+
+* **deps:** bump open-feature/go-sdk from v1.11 to v1.15 ([#686](https://github.com/erka/go-sdk-contrib/issues/686)) ([ce87102](https://github.com/erka/go-sdk-contrib/commit/ce871021d0c45d3c992bb00b33c8b7a8e337e9a3))
+* **deps:** update module github.com/open-feature/go-sdk to v1.10.0 ([#469](https://github.com/erka/go-sdk-contrib/issues/469)) ([21810af](https://github.com/erka/go-sdk-contrib/commit/21810afc33fce9a3940ec9dc59e65f140fcbaa57))
+* **deps:** update module github.com/open-feature/go-sdk to v1.11.0 ([#501](https://github.com/erka/go-sdk-contrib/issues/501)) ([3f0eaa5](https://github.com/erka/go-sdk-contrib/commit/3f0eaa575500baa663dc24dbfc6cf8214565471f))
+* **deps:** update module github.com/open-feature/go-sdk to v1.15.1 ([#681](https://github.com/erka/go-sdk-contrib/issues/681)) ([8fd544f](https://github.com/erka/go-sdk-contrib/commit/8fd544ff81fd25eed655a214aa1ae1906a436f0d))
+* **deps:** update module github.com/open-feature/go-sdk to v1.5.1 ([#263](https://github.com/erka/go-sdk-contrib/issues/263)) ([c75ffd6](https://github.com/erka/go-sdk-contrib/commit/c75ffd6017689a86860dec92c1a1564b6145f0c9))
+* **deps:** update module github.com/open-feature/go-sdk to v1.6.0 ([#289](https://github.com/erka/go-sdk-contrib/issues/289)) ([13eeb48](https://github.com/erka/go-sdk-contrib/commit/13eeb482ee3d69c5fb8100563501c2250b6454f1))
+* **deps:** update module github.com/open-feature/go-sdk to v1.7.0 ([#315](https://github.com/erka/go-sdk-contrib/issues/315)) ([3f049ad](https://github.com/erka/go-sdk-contrib/commit/3f049ad34e93c3b9b9d4cf5a2e56f3777eb858e6))
+* **deps:** update module github.com/open-feature/go-sdk to v1.8.0 ([#329](https://github.com/erka/go-sdk-contrib/issues/329)) ([c99b527](https://github.com/erka/go-sdk-contrib/commit/c99b52728bad9dce52bfb78a08ae5f4eea83a397))
+* **deps:** update module go.opentelemetry.io/otel/sdk/metric to v1 ([#371](https://github.com/erka/go-sdk-contrib/issues/371)) ([50fcef6](https://github.com/erka/go-sdk-contrib/commit/50fcef618aa7eb3800d9ab476dbebf61f5ee401c))
+* **deps:** update opentelemetry-go monorepo ([#318](https://github.com/erka/go-sdk-contrib/issues/318)) ([d3c8e87](https://github.com/erka/go-sdk-contrib/commit/d3c8e8752762a9df8bf796afe4f93c2741887463))
+* **deps:** update opentelemetry-go monorepo to v1.21.0 ([#383](https://github.com/erka/go-sdk-contrib/issues/383)) ([f417648](https://github.com/erka/go-sdk-contrib/commit/f417648ccb2875562eb9215eb830b0a0eba2e44c))
+* **deps:** update opentelemetry-go monorepo to v1.25.0 ([#493](https://github.com/erka/go-sdk-contrib/issues/493)) ([6241825](https://github.com/erka/go-sdk-contrib/commit/62418255a6a0c48cd6ad8b94c9fd5a4c6943b1da))
+* **security:** update module go.opentelemetry.io/otel/sdk to v1.40.0 [security] ([#835](https://github.com/erka/go-sdk-contrib/issues/835)) ([55ccbce](https://github.com/erka/go-sdk-contrib/commit/55ccbcee82ddcc87fa1099cc31006615570fda3c))
+
+
+### ✨ New Features
+
+* api change to support more usecases ([#254](https://github.com/erka/go-sdk-contrib/issues/254)) ([c855a67](https://github.com/erka/go-sdk-contrib/commit/c855a677e34d3f6b1d8b24bc721ce389a19f742f))
+* attribute setter callbacks for otel hooks and remove deprecated constructors  ([#311](https://github.com/erka/go-sdk-contrib/issues/311)) ([27f7ca7](https://github.com/erka/go-sdk-contrib/commit/27f7ca7d17667b33e2ed8206b96dc304e5d33454))
+* OTel hook changes for hook interface updates ([#644](https://github.com/erka/go-sdk-contrib/issues/644)) ([38b3b6f](https://github.com/erka/go-sdk-contrib/commit/38b3b6f80bc31b815840903d26c4b4b3cf8ced41))
+* **otel:** add NewMetricsHook, use api interface instead of SDK type ([#530](https://github.com/erka/go-sdk-contrib/issues/530)) ([0472b0d](https://github.com/erka/go-sdk-contrib/commit/0472b0d59732be7f93b5e79875c0a61fcd4a35e6))
+* update OpenTelemetry hook to use the latest semconv ([#713](https://github.com/erka/go-sdk-contrib/issues/713)) ([4d0a91c](https://github.com/erka/go-sdk-contrib/commit/4d0a91cf71db9c751240bfa476b4fab226b7e909))
+
 ## [0.3.7](https://github.com/open-feature/go-sdk-contrib/compare/hooks/open-telemetry/v0.3.6...hooks/open-telemetry/v0.3.7) (2026-03-05)
 
 
