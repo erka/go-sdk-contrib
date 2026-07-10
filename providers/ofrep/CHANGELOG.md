@@ -1,5 +1,26 @@
 # Changelog
 
+## [0.1.8](https://github.com/erka/go-sdk-contrib/compare/providers/ofrep/v0.1.7...providers/ofrep/v0.1.8) (2026-07-10)
+
+
+### 🐛 Bug Fixes
+
+* Default GO parsing is float64 for int ([#539](https://github.com/erka/go-sdk-contrib/issues/539)) ([2f6a40e](https://github.com/erka/go-sdk-contrib/commit/2f6a40e6a6ffa75ac583aaaee6a937d8ab10ca19))
+* **deps:** bump open-feature/go-sdk from v1.11 to v1.15 ([#686](https://github.com/erka/go-sdk-contrib/issues/686)) ([ce87102](https://github.com/erka/go-sdk-contrib/commit/ce871021d0c45d3c992bb00b33c8b7a8e337e9a3))
+* **deps:** update module github.com/open-feature/go-sdk to v1.11.0 ([#501](https://github.com/erka/go-sdk-contrib/issues/501)) ([3f0eaa5](https://github.com/erka/go-sdk-contrib/commit/3f0eaa575500baa663dc24dbfc6cf8214565471f))
+* **deps:** update module github.com/open-feature/go-sdk to v1.15.1 ([#681](https://github.com/erka/go-sdk-contrib/issues/681)) ([8fd544f](https://github.com/erka/go-sdk-contrib/commit/8fd544ff81fd25eed655a214aa1ae1906a436f0d))
+* Don't panic if metadata not present in the response ([#537](https://github.com/erka/go-sdk-contrib/issues/537)) ([f0b5547](https://github.com/erka/go-sdk-contrib/commit/f0b554746934b496902563c2fdf7cb68bf8e2f1d))
+* Make OFREP option public ([#536](https://github.com/erka/go-sdk-contrib/issues/536)) ([b005dce](https://github.com/erka/go-sdk-contrib/commit/b005dce8126476fb893914f0b631305015dee91f))
+* **ofrep:** close http response body after using it ([#576](https://github.com/erka/go-sdk-contrib/issues/576)) ([02a3b5d](https://github.com/erka/go-sdk-contrib/commit/02a3b5d17e402573384f65efcc0b32e7863dd8e6))
+* **ofrep:** Manage disabled flag ([#543](https://github.com/erka/go-sdk-contrib/issues/543)) ([b4dd97d](https://github.com/erka/go-sdk-contrib/commit/b4dd97d06fad07afdfb4cb725194f558e0a685b1))
+* Should return a parse error if error while parsing ([#538](https://github.com/erka/go-sdk-contrib/issues/538)) ([1e2a7f4](https://github.com/erka/go-sdk-contrib/commit/1e2a7f4abb2fb48ca5047b7e4aa16cfc50a199a8))
+
+
+### ✨ New Features
+
+* introduce OFREP provider   ([#477](https://github.com/erka/go-sdk-contrib/issues/477)) ([a1cb699](https://github.com/erka/go-sdk-contrib/commit/a1cb699d4903502797a1184b79372b45ac1ef0b2))
+* **ofrep:** add header, base URI, and timeout options ([#794](https://github.com/erka/go-sdk-contrib/issues/794)) ([058f837](https://github.com/erka/go-sdk-contrib/commit/058f83795e36dc72286daa118c768329855702ba))
+
 ## [0.1.7](https://github.com/open-feature/go-sdk-contrib/compare/providers/ofrep/v0.1.6...providers/ofrep/v0.1.7) (2025-11-18)
 
 
